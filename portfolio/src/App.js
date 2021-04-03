@@ -3,10 +3,14 @@ import './App.css';
 
 
 import Home from './Components/HomePage/Home.jsx'
+import Navbar from './Components/Navbar/Navbar.jsx'
 
 function App() {
   return (
-    <Home> </Home>
+    <>
+      <Navbar></Navbar>
+      <Home> </Home>
+    </>
   );
 }
 

@@ -5,12 +5,12 @@ function Routes() {
     return (
         <>
             <Switch>
-                <Route path="/about" render={() => <HomePage />} />
-                <Route path="/skills" component={Login} />
-                <Route path="/education" component={Signup} />
-                <Route path="/projects" component={Inbox} />
-                <Route path="/blogs" component={ExploreThoughts} />
-                <Route path="/contact" component={CreateThought} />
+                <Route path="/about" component={About} />
+                <Route path="/skills" component={Skills} />
+                <Route path="/education" component={Education} />
+                <Route path="/projects" component={Projects} />
+                <Route path="/blogs" component={Blogs} />
+                <Route path="/contact" component={Contact} />
             </Switch>
         </>
     )
