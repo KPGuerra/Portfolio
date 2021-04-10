@@ -5,8 +5,8 @@ function SkillsContainer() {
     return (
         <>
             <h1> My Skills </h1>
-            <p> </p>
-            <SkillCards />
+            {/* <p> </p>
+            <SkillCards /> */}
         </>
     )
 }
