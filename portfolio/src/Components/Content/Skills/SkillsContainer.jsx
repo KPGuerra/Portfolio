@@ -10,3 +10,5 @@ function SkillsContainer() {
         </>
     )
 }
+
+export default SkillsContainer
