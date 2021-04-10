@@ -5,8 +5,9 @@ function Routes() {
     return (
         <>
             <Switch>
+                <Route path="/home" component={Home} />
                 <Route path="/about" component={About} />
-                <Route path="/skills" component={Skills} />
+                <Route path="/skills" component={SkillsContainer} />
                 <Route path="/education" component={Education} />
                 <Route path="/projects" component={Projects} />
                 <Route path="/blogs" component={Blogs} />
