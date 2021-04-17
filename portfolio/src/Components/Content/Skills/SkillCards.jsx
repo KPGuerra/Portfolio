@@ -1,11 +1,11 @@
 import React from 'react'
 
 function SkillCards (props) {
-    let languages = ["Ruby", "JavaScript","React.js", "Redux","Rails", "HTML", "CSS"]
-    let patterns = ["ActiveRecord", "MVC", "ActiveStorage", "RESTful API", "JWT", "OAuth"]
     return (
-        <h3> {props.skillObj.name}</h3>
-
+        <div>
+            <h3> {props.skillObj.name}</h3>
+            <img src={props.skillObj.icon} width="180" height="170"/>
+        </div>
     )
 }
 
