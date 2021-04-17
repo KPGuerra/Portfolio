@@ -3,6 +3,7 @@ import React from 'react'
 function AboutMe() {
     return (
         <>
+            {/* <img src="" alt="Picture of me :)"/> */}
             <h1> Who I Am </h1>
 
             <p>
@@ -17,6 +18,8 @@ function AboutMe() {
             </p>
             <p>
                 Outside of coding, you can catch me walking my dog, petting other dogs on the street, or taking a bike ride around the park. 
+                <break/>
+                Lets make something special!
             </p>
         </>
     )
