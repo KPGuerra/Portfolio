@@ -27,7 +27,7 @@ function ContactPage() {
             <div>
                 <h3> Email </h3>
                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freelogovectors.net%2Fwp-content%2Fuploads%2F2020%2F10%2Fgmail_logo_icon.png&f=1&nofb=1" alt="Gmail Logo" width="150" height="140"/>
-                <a href=""> KMPGuerra@gmail.com</a>
+                <a href="mailto:KMPGuerra@gmail.com"> KMPGuerra@gmail.com</a>
             </div>
 
 

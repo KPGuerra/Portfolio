@@ -3,7 +3,7 @@ import React from 'react'
 function AboutMe() {
     return (
         <>
-            {/* <img src="" alt="Picture of me :)"/> */}
+            <img src="https://media.discordapp.net/attachments/770379399425556580/833940282672152586/unknown.png?width=872&height=1170" width="400" height="550" style={{"border-radius": "4%"}} alt="A Selfie :)"/>
             <h1> Who I Am </h1>
 
             <p>
