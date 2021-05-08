@@ -6,7 +6,8 @@ function BlogCards (props) {
     return (
         <div>
             <h1>{blogObj.title}</h1>
-            <img src={blogObj.thumbnail}/>
+            <img src={blogObj.thumbnail} width="470" height="250"/>
+            <p> {blogObj.pubDate}</p>
             
         </div>
     )
