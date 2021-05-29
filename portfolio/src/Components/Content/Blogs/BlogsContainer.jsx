@@ -28,6 +28,7 @@ class BlogsContainer extends React.Component {
     render() {
         return (
             <>
+                <h1>Checkout My Most Recent Blogs</h1>
                 {this.state.myFeed.length === 0 ? <h1> Loading Blog Post </h1> : <>{this.renderBlogCards()}</> }
             </>
         )

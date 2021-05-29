@@ -40,14 +40,30 @@ function BlogCards(props) {
         let newDay = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(newDate);
 
         return `${newMonth} ${newDay}, ${newYear}`
+    }
 
+    const tagHandlers = (tagArray) => {
+        let newTagArr = []
+        for (let i=0; i < tagArray.length; i++) {
+            if (tagArray[i].includes("-")) {
+                let tag = tagArray[i].split("-").join(" ")
+                newTagArr.push(tag)  
+            }
+            else {
+                newTagArr.push(tagArray[i])
+            }
+        }
+        return newTagArr.map(tag => <p>{tag}</p>)
     }
 
     return (
         <div>
-            <h1>{titleHandler(blogObj.title)}</h1>
+            <h2>{titleHandler(blogObj.title)}</h2>
             <img src={blogObj.thumbnail} width="470" height="250" />
-            <p> Date: {dateHandler(blogObj.pubDate)}</p>
+            <h3> Date: {dateHandler(blogObj.pubDate)}</h3>
+            <div>
+                {tagHandlers(blogObj.categories)}
+            </div>
         </div>
     )
 }
