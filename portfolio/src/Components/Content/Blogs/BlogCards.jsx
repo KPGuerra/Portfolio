@@ -47,9 +47,7 @@ function BlogCards(props) {
         <div>
             <h1>{titleHandler(blogObj.title)}</h1>
             <img src={blogObj.thumbnail} width="470" height="250" />
-            <p> {dateHandler(blogObj.pubDate)}</p>
-            
-
+            <p> Date: {dateHandler(blogObj.pubDate)}</p>
         </div>
     )
 }
