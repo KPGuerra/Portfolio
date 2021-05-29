@@ -34,7 +34,12 @@ function BlogCards(props) {
         let day = arr[2]
         let year = arr[0]
 
-        return `${month}/${day}/${year}`
+        let newDate = new Date(year, month, day);
+        let newYear = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(newDate);
+        let newMonth = new Intl.DateTimeFormat('en', { month: 'long' }).format(newDate);
+        let newDay = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(newDate);
+
+        return `${newMonth} ${newDay}, ${newYear}`
 
     }
 
